@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game House</title>
+
+    <script src="https://kit.fontawesome.com/209423cbdf.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home-body">
+    <div id="home-full-page-gradient" class="full-page-gradient"></div>
+    <header id="home-header">
+        <div id="header-upper">
+            <a href="#" id="home-logo" class="white-nav-item"><i class="fas fa-gamepad"></i></a>
+
+            <ul id="navigation-items">
+                <li><a href="#" class="nav-item white-nav-item-active wide-screen-link">Home</a></li>
+                <!-- <li class="nav-item">Games <span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span></li> -->
+                <li><a href="about.html" class="nav-item white-nav-item wide-screen-link">About</a></li>
+                <li><a href="#" id="header-bar" class="nav-item white-nav-item small-screen-link"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div id="header-lower">
+            <ul id="navigation-items-lower">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="open-sublist-lower" data-list="1">Games<span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul id="games-list-lower" data-mainlist="1" data-open="false">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="home-main">
+        <section id="hh-message">
+            <h1>Enjoy our games!</h1>
+            <p>Kill your time by playing one of the games in our selection, alone or with your friends.</p>
+            <button type="button" id="random-game">Play a random game</button>
+        </section>
+        <section id="games-grid">
+            <article id="gsp-1" class="game-short-presentation game-presentation" data-gamename="tictactoe">
+                <div class="gp-title">
+                    <p>Tic-Tac-Toe</p>
+                </div>
+            </article>
+            <article id="gsp-2" class="game-short-presentation game-presentation" data-gamename="memory">
+                <div class="gp-title">
+                    <p>Memory</p>
+                </div>
+            </article>
+            <article id="game-long-presentation" class="game-presentation" data-gamename="jigsaw">
+                <div id="glp-title" class="gp-title">
+                    <p>Jigsaw</p>
+                </div>
+                <div id="glp-pictures-slider"></div>
+            </article>
+        </section>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+</html>

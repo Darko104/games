@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game House - TicTacToe</title>
+
+    <script src="https://kit.fontawesome.com/209423cbdf.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page-gradient"></div>
+    <header id="gamepage-header">
+        <div id="header-upper">
+            <a href="#" id="home-logo" class="white-nav-item"><i class="fas fa-gamepad"></i></a>
+
+            <ul id="navigation-items">
+                <li><a href="index.html" class="nav-item white-nav-item wide-screen-link">Home</a></li>
+                <li id="games-dropdown" class="nav-item white-nav-item wide-screen-link">Games <span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span>
+                    <ul id="games-list">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-item white-nav-item wide-screen-link">About</a></li>
+                <li><a href="#" id="header-bar" class="nav-item white-nav-item small-screen-link"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div id="header-lower">
+            <ul id="navigation-items-lower">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="open-sublist-lower" data-list="1">Games<span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul id="games-list-lower" data-mainlist="1" data-open="false">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="tic-tac-toe">
+        <section id="ttt-game-window">
+            <div id="ttt-options">
+                <div id="ttt-select-game-type-wrapper" class="ttt-option-wrapper">
+                    <p>Game type:</p>
+                    <select id="ttt-select-game-type">
+                        <option value="2pl">Player VS Player</option>
+                        <option value="plcpu">Player VS CPU</option>
+                    </select>
+                </div>
+                <div id="ttt-player-options" class="ttt-option-wrapper">
+                    <div class="ttt-player-option" data-player="1">
+                        <div class="tttpo-symbol">
+                            <p class="ttt-player-index">Player 1: </p>
+                            <select class="ttt-select-symbol" data-player="1">
+                                <option value="iks" selected>X</option>
+                                <option value="oks">O</option>
+                            </select>
+                        </div>
+                        <div class="tttpo-score-wrapper">
+                            <p>Score:</p>
+                            <input type="number" class="tttpo-score" data-player="1" value="0" readonly>
+                        </div>
+                    </div>
+                    <div class="ttt-player-option" data-player="2">
+                        <div class="tttpo-symbol">
+                            <p class="ttt-player-index"><span id="second-contestant">Player 2</span>: </p>
+                            <select class="ttt-select-symbol" data-player="2">
+                                <option value="iks">X</option>
+                                <option value="oks" selected>O</option>
+                            </select>
+                        </div>
+                        <div class="tttpo-score-wrapper">
+                            <p>Score:</p>
+                            <input type="number" class="tttpo-score" data-player="2" value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div id="minor-game-options" class="ttt-option-wrapper">
+                    <button id="ttt-restart" class="minor-game-option-button">Restart</button>
+                    <button id="ttt-tutorial" class="minor-game-option-button">Tutorial</button>
+                </div>
+            </div>
+            <div id="gameBoard">
+                <div class="ttt-field" data-id="1"></div>
+                <div class="ttt-field" data-id="2"></div>
+                <div class="ttt-field" data-id="3"></div>
+                <div class="ttt-field" data-id="4"></div>
+                <div class="ttt-field" data-id="5"></div>
+                <div class="ttt-field" data-id="6"></div>
+                <div class="ttt-field" data-id="7"></div>
+                <div class="ttt-field" data-id="8"></div>
+                <div class="ttt-field" data-id="9"></div>
+            </div>
+        </main>
+        </section>
+        <div id="tutorial">
+            <div id="tutorial-slider">
+                <div id="tutorial-bullets">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="tutorial-main">
+                    <div id="tm-explanation">
+                        <p></p>
+                    </div>
+                    <div id="tm-thumbnail-wrapper">
+                        <img id="tm-thumbnail" src="">
+                    </div>
+                </div>
+                <div id="tutorial-arrows">
+                    <div id="tutorial-back" class="tutorial-arrow"><i class="fas fa-arrow-left"></i></div>
+                    <div id="tutorial-forward" class="tutorial-arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>

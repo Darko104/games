@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game House - Jigsaw</title>
+
+    <script src="https://kit.fontawesome.com/209423cbdf.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page-background">
+    <div class="full-page-gradient"></div>
+    <header id="gamepage-header">
+        <div id="header-upper">
+            <a href="#" id="home-logo" class="white-nav-item"><i class="fas fa-gamepad"></i></a>
+
+            <ul id="navigation-items">
+                <li><a href="index.html" class="nav-item white-nav-item wide-screen-link">Home</a></li>
+                <li id="games-dropdown" class="nav-item white-nav-item wide-screen-link">Games <span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span>
+                    <ul id="games-list">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-item white-nav-item wide-screen-link">About</a></li>
+                <li><a href="#" id="header-bar" class="nav-item white-nav-item small-screen-link"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div id="header-lower">
+            <ul id="navigation-items-lower">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="open-sublist-lower" data-list="1">Games<span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul id="games-list-lower" data-mainlist="1" data-open="false">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="jigsaw">
+            <aside id="jigsaw-info">
+                <div id="jigsaw-player-stats">
+                    <div id="player-total-score" class="jigsaw-single-game-showcase">
+                        <p class="single-game-name">Total score:</p>
+                        <p id="jigsaw-player-total-score" class="single-game-score">/</p>
+                    </div>
+                    <div class="jigsaw-single-game-showcase">
+                        <p id="jigsaw-myNumber-name" class="single-game-name">My number:</p>
+                        <p id="jigsaw-myNumber-score" class="single-game-score">0</p>
+                    </div>
+                    <div class="jigsaw-single-game-showcase">
+                        <p id="jigsaw-jumpy-name" class="single-game-name">Jumpy:</p>
+                        <p id="jigsaw-jumpy-score" class="single-game-score">0</p>
+                    </div>
+                    <div class="jigsaw-single-game-showcase">
+                        <p id="jigsaw-connector-name" class="single-game-name">Connector:</p>
+                        <p id="jigsaw-connector-score" class="single-game-score">0</p>
+                    </div>
+                    <div class="jigsaw-single-game-showcase">
+                        <p id="jigsaw-trivia-name" class="single-game-name">Trivia:</p>
+                        <p id="jigsaw-trivia-score" class="single-game-score">0</p>
+                    </div>
+                    <div class="jigsaw-single-game-showcase">
+                        <p id="jigsaw-associations-name" class="single-game-name">Associations:</p>
+                        <p id="jigsaw-associations-score" class="single-game-score">0</p>
+                    </div>
+                </div>
+                <div id="jigsaw-options">
+                    <button id="skip-game" class="jigsaw-option jigsaw-small-button">Skip this game</button>
+                    <button id="open-specific-tutorial" class="jigsaw-option jigsaw-small-button">Tutorial for this game</button>
+                </div>
+            </aside>
+            <div id="jigsaw-game-window" class="jigsaw-game-window-begining">
+                <button id="js-game-start" class="game-manipulation-button">Start</button>
+                <button type="submit" id="js-game-tutorial" class="game-manipulation-button">How to play</button>
+            </div>
+        </section>
+        <div id="tutorial">
+            <div id="tutorial-slider">
+                <div id="tutorial-bullets">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="tutorial-main">
+                    <div id="tm-explanation">
+                        <p></p>
+                    </div>
+                    <div id="tm-thumbnail-wrapper">
+                        <img id="tm-thumbnail" src="">
+                    </div>
+                </div>
+                <div id="tutorial-arrows">
+                    <div id="tutorial-back" class="tutorial-arrow"><i class="fas fa-arrow-left"></i></div>
+                    <div id="tutorial-forward" class="tutorial-arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jigsaw.js"></script>
+</body>
+</html>

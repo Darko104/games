@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game House - About</title>
+
+    <script src="https://kit.fontawesome.com/209423cbdf.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body-about">
+    <div id="full-page-gradient"></div>
+    <header id="about-header">
+        <div id="header-upper">
+            <a href="#" id="home-logo" class="black-nav-item"><i class="fas fa-gamepad"></i></a>
+
+            <ul id="navigation-items">
+                <li><a href="index.html" class="nav-item black-nav-item wide-screen-link">Home</a></li>
+                <li id="games-dropdown" class="nav-item black-nav-item wide-screen-link">Games <span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span>
+                    <ul id="games-list">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-item black-nav-item-active wide-screen-link">About</a></li>
+                <li><a href="#" id="header-bar" class="nav-item black-nav-item small-screen-link"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div id="header-lower">
+            <ul id="navigation-items-lower" class="nil-white-background">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="open-sublist-lower" data-list="1">Games<span class="nav-item-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul id="games-list-lower" class="gll-white-background" data-mainlist="1" data-open="false">
+                        <li><a href="jigsaw.html">Jigsaw</a></li>
+                        <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                        <li><a href="memory.html">Memory</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="about-main">
+        <div id="about-author">
+            <div id="author-empty-side">
+                <div id="author-card">
+                    <div id="card-author-info">
+                        <img id="author-picture" src="chameleon.jpg">
+                        <h5 id="card-author-name">Darko Đukić</h5>
+                        <hr class="card-border"></hr>
+                        <p id="author-ocupation">Web developer</p>
+                    </div>
+                    <div id="author-card-social">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="author-info">
+                <div id="initial-author-info">
+                    <h1>About me<span id="author-header-colored">!</span></h1>
+                    <p id="author-basic-info">My name is Darko Đukić, i am a Web Developer from Pančevo, Serbia.</p>
+                    <div id="author-buttons">
+                        <button id="open-project-info" class="author-button">This project</button>
+                        <button class="author-button">My portfolio</button>
+                    </div>
+                    <p id="author-more-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sequi dolor iure perferendis! Vitae inventore aliquid ratione ipsa excepturi, voluptatibus aspernatur!<br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam impedit dolorum hic pariatur cumque perferendis.</p>
+                </div>
+                <div id="this-project-info">
+                    <div class="project-part">
+                        <h5 class="project-part-title">Jigsaw</h5>
+                        <p class="project-part-explanation">Recreation of 5 minigames from the longest running gameshow in Serbia called 'Slagalica'. Minigames original names are (in the same order as in my recreated version): 'Moj broj', 'Skocko', 'Spojnice', 'Ko zna zna', 'Asocijacije'.</p>
+                    </div>
+                    <div class="project-part">
+                        <h5 class="project-part-title">Tic-Tac-Toe</h5>
+                        <p class="project-part-explanation">A classic paper and pencil game whose early variations can be traced back to Roman Empire.</br>I made a small algorithm that let's a player play against CPU. The algorithm is written in such a way that CPU first checks if a center field is taken since taking that field enhances the chance of winning. If not, CPU will pick another position. After that CPU's will search if there is a field which, if he chose, would bring him victory. If such field does not exist, he places 'O' in a field within a direction where player did not interfere yet.
+                        If a player is close to winning CPU will try to stop him by placing 'O' in a player's potential third field.
+                    </div>
+                    <div class="project-part">
+                        <h5 class="project-part-title">Memory</h5>
+                        <p class="project-part-explanation">Very popular board game played by both kids and adults. It can be played by multiple people.</p>
+                    </div>
+                    <button id="return-to-initial" class="author-button">Back</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/about.js"></script>
+</body>
+</html>
