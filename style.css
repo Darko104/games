@@ -1287,9 +1287,9 @@ html, #body-about {
 	height: 90%;
 }
 #author-picture {
-	margin-bottom: 20px;
-	width: 125px;
-	height: 125px;
+	margin-bottom: 12px;
+	width: auto;
+	height: 138px;
 	border-radius: 50%;
 }
 #card-author-name {
